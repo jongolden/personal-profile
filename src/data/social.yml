@@ -1,0 +1,12 @@
+- name: Email
+  href: mailto:jonathan@jonathan-golden.me
+  icon: envelope
+  title: Email me
+- name: GitHub
+  href: https://github.com/jgolden17/
+  icon: fab-github
+  title: Follow me on Github
+- name: Strava
+  href: https://www.strava.com/athletes/40062660/
+  icon: fab-strava
+  title: Follow me on Strava
