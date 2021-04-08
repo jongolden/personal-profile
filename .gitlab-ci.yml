@@ -1,0 +1,16 @@
+image: trion/ng-cli-karma
+cache:
+  paths:
+    - node_modules/
+before_script:
+  - apt-get update -qq && apt-get install -y -qq sshpass
+deploy_production:
+  stage: deploy
+  environment: Production
+  only:
+    - tags
+  script:
+    - npm ci --unsafe-perm
+    - cd public/
+    - export SSHPASS=$MAYFIRST_PASS
+    - sshpass -e scp -r * $MAYFIRST_SCP_STRING
