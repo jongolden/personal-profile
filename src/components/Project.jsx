@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Project = ({
   title,
@@ -8,31 +7,30 @@ const Project = ({
   description,
   role,
   url,
+  stack,
 }) => (
-  <div className="card">
-    <div className="card-content">
-      <div className="media">
-        <div className="media-left">
-          <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
-        </div>
-        <div className="media-content">
-          <p className="title is-size-4-tablet is-size-5-mobile">{title}</p>
-          <p className="subtitle is-6 has-text-dark">{subtitle}</p>
-        </div>
-      </div>
-      <div className="content">
-        {description}
-      </div>
-      <div className="content">
-        <span className="tag">{role}</span>
-      </div>
+  <a href={url} target="_blank" rel="noreferrer">
+    <h4 className="title is-size-4-tablet is-size-5-mobile">{title}</h4>
+    <p className="subtitle is-6 has-text-dark">{subtitle}</p>
+    <div className="content has-text-dark">
+      {description}
     </div>
-  </div>
+    <div>
+      <span className="tag is-link mr-2">{role}</span>
+      {stack.map((stack) => (
+        <span key={stack} className="tag is-info mr-2">{stack}</span>
+      ))}
+    </div>
+  </a>
 );
+
+Project.defaultProps = {
+  subtitle: '',
+};
 
 Project.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
   description: PropTypes.string.isRequired,
   role: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,

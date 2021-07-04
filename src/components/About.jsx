@@ -1,20 +1,17 @@
 import React from 'react';
-import Content from './HtmlContent';
-import useAboutContent from '../hooks/useAboutContent';
+import Section from './Section';
+import SectionTitle from './SectionTitle';
 
-const About = () => {
-  const { title, content } = useAboutContent();
-
-  return (
-    <section className="section">
-      <div className="container is-max-desktop">
-        <h2 className="title is-size-3-desktop is-size-4-mobile has-text-centered-mobile">
-          {title}
-        </h2>
-        <Content content={content} />
-      </div>
-    </section>
-  );
-};
+const About = () => (
+  <Section>
+    <SectionTitle>What I'm about</SectionTitle>
+    <div className="content">
+      <p>I'm a software developer based in Phoenix, Arizona.</p>
+      <p>My focus has mainly been in building micro-UI React applications, but I'm also skilled in back-end development with Node.js, GraphQL, and Java.</p>
+      <p>When I'm not generating surplus value, I'm providing software solutions for small social justice projects <span role="img" aria-label="fist">✊</span> or putzing around on my bike.</p>
+    </div>
+  </Section>
+);
 
 export default About;
+ 

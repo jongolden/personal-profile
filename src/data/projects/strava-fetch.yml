@@ -1,6 +1,0 @@
-title: 'Strava Fetch'
-packageName: 'strava-fetch'
-description: 'Fetch procedures for consuming the Strava API.'
-url: 'https://github.com/jgolden17/strava-fetch'
-language: 'JavaScript'
-role: 'author'

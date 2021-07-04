@@ -1,15 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: 'Jonathan Golden',
-    description: 'Full Stack Developer',
+    description: 'Senior Full Stack Developer',
+    jobTitle: 'Senior Full Stack Developer',
     author: '@jgolden17',
     siteUrl: 'https://jonathan-golden.me/',
     googleSiteVerification: 'YM65urxVqPi5q3nXVGbzeu8g8zKcGtxb6_qBq_20eng',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-image',
-    'gatsby-transformer-yaml',
+    'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -20,28 +19,22 @@ module.exports = {
         icon: "src/images/favicon.png",
       },
     },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-transformer-yaml',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
+        name: 'pages',
+        path: './src/pages/',
       },
+      __key: 'pages',
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/data`,
+        path: `${__dirname}/data`,
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'markdown-pages',
-        path: `${__dirname}/src/markdown`,
-      },
-    },
-    'gatsby-transformer-remark',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
   ],
-}
+};

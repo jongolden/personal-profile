@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import structuredData from '../structured-data.json';
 
 function SEO({
   description,
@@ -18,14 +19,13 @@ function SEO({
             title
             description
             author
+            siteUrl
             googleSiteVerification
           }
         }
       }
     `
   );
-
-  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
@@ -48,15 +48,15 @@ function SEO({
         },
         {
           name: 'description',
-          content: metaDescription,
+          content: description || site.siteMetadata.description,
         },
         {
           property: 'og:title',
-          content: title,
+          content: title || site.siteMetadata.title,
         },
         {
           property: 'og:description',
-          content: metaDescription,
+          content: description || site.siteMetadata.description,
         },
         {
           property: 'og:type',
@@ -76,10 +76,14 @@ function SEO({
         },
         {
           name: 'twitter:description',
-          content: metaDescription,
+          content: description || site.siteMetadata.description,
         },
       ].concat(meta)}
     >
+
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData, null, 2)}
+      </script>
       {children}
     </Helmet>
   );
@@ -90,13 +94,14 @@ SEO.defaultProps = {
   meta: [],
   description: '',
   children: null,
+  title: '',
 };
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   children: PropTypes.node,
 };
 

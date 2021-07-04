@@ -1,22 +1,23 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-function useSocialLinks() {
-  const socialQuery = useStaticQuery(graphql`
+function useProgramming() {
+  const dataQuery = useStaticQuery(graphql`
     query {
       allSocialYaml {
         nodes {
+          title
           name
           href
+          id
           icon
-          title
         }
       }
     }
   `);
 
-  const { allSocialYaml: { nodes } } = socialQuery;
+  const { allSocialYaml: { nodes } } = dataQuery;
 
   return nodes;
 }
 
-export default useSocialLinks;
+export default useProgramming;

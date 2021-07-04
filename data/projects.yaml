@@ -1,0 +1,43 @@
+- title: 'Wetherill Portfolio'
+  subtitle: 'Artist porfolio for Bill Wetherill'
+  description: 'Artist profile built with Gatsby, Bulma, and Contentful CMS'
+  url: 'https://github.com/americanexpress/parrot'
+  role: 'author'
+  stack:
+    - React
+    - Gatsby
+    - Contentful CMS
+- title: 'Parrot'
+  subtitle: 'Scenario-based HTTP mocking'
+  packageName: '@americanexpress/parrot'
+  description: 'Parrot is a set of tools that allow you to create HTTP mocks and organize them into scenarios in order to develop your app against different sets of data.'
+  url: 'https://github.com/americanexpress/parrot'
+  role: 'maintainer'
+  stack:
+    - JavaScript
+- title: 'Personal Profile'
+  packageName: '@jgolden17/personal-profile'
+  description: 'My personal profile written in Gatsby'
+  url: 'https://github.com/jgolden17/personal-profile'
+  language: 'React'
+  role: 'author'
+  stack:
+    - React
+    - Gatsby
+- title: 'React SEO'
+  subtitle: 'Simple SEO tag manager for React'
+  packageName: '@americanexpress/parrot'
+  description: 'Parrot is a set of tools that allow you to create HTTP mocks and organize them into scenarios in order to develop your app against different sets of data.'
+  url: 'https://github.com/americanexpress/parrot'
+  language: 'JavaScript'
+  role: 'author'
+  stack:
+    - React
+- title: 'Strava Fetch'
+  packageName: 'strava-fetch'
+  description: 'Fetch procedures for consuming the Strava API.'
+  url: 'https://github.com/jgolden17/strava-fetch'
+  language: 'JavaScript'
+  role: 'author'
+  stack:
+    - JavaScript

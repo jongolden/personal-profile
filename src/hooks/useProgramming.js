@@ -3,22 +3,16 @@ import { useStaticQuery, graphql } from 'gatsby';
 function useProgramming() {
   const dataQuery = useStaticQuery(graphql`
     query {
-      allProjectsYaml {
+      allProgrammingYaml {
         nodes {
-          description
-          packageName
-          stack
-          role
-          subtitle
-          title
-          url
-          id
+          experience
+          label
         }
       }
     }
   `);
 
-  const { allProjectsYaml: { nodes } } = dataQuery;
+  const { allProgrammingYaml: { nodes } } = dataQuery;
 
   return nodes;
 }
