@@ -8,7 +8,7 @@ import Technologies from '../components/Technologies';
 const Skills = () => (
   <Section>
     <SectionTitle>What I'm good at</SectionTitle>
-    <div className="content">
+    <div className="content larger">
       I've dabbled in a lot of different technologies over the years.  Below
       are the programming languages, frameworks, and auxilary technologies that
       I use from day to day.

@@ -5,7 +5,7 @@ import SectionTitle from './SectionTitle';
 const About = () => (
   <Section>
     <SectionTitle>What I'm about</SectionTitle>
-    <div className="content">
+    <div className="content larger">
       <p>I'm a software developer based in Phoenix, Arizona.</p>
       <p>My focus has mainly been in building micro-UI React applications, but I'm also skilled in back-end development with Node.js, GraphQL, and Java.</p>
       <p>When I'm not generating surplus value, I'm providing software solutions for small social justice projects <span role="img" aria-label="fist">✊</span> or putzing around on my bike.</p>
@@ -14,4 +14,3 @@ const About = () => (
 );
 
 export default About;
- 
