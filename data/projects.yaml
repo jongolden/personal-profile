@@ -1,7 +1,7 @@
 - title: 'Wetherill Portfolio'
   subtitle: 'Artist porfolio for Bill Wetherill'
   description: 'Artist profile built with Gatsby, Bulma, and Contentful CMS'
-  url: 'https://github.com/americanexpress/parrot'
+  url: 'https://gitlab.com/jgolden17/bill-wetherill-portfolio'
   role: 'author'
   stack:
     - React
@@ -18,7 +18,7 @@
 - title: 'Personal Profile'
   packageName: '@jgolden17/personal-profile'
   description: 'My personal profile written in Gatsby'
-  url: 'https://github.com/jgolden17/personal-profile'
+  url: 'https://gitlab.com/jgolden17/personal-profile'
   language: 'React'
   role: 'author'
   stack:
@@ -36,7 +36,7 @@
 - title: 'Strava Fetch'
   packageName: 'strava-fetch'
   description: 'Fetch procedures for consuming the Strava API.'
-  url: 'https://github.com/jgolden17/strava-fetch'
+  url: 'https://gitlab.com/jgolden17/strava-fetch'
   language: 'JavaScript'
   role: 'author'
   stack:
