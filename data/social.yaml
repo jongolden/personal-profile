@@ -2,6 +2,10 @@
   href: mailto:jonathan@jonathan-golden.me
   icon: envelope
   title: Email me
+- name: GitLab
+  href: https://gitlab.com/jgolden17
+  icon: fab-gitlab
+  title: Follow me on GitLab
 - name: GitHub
   href: https://github.com/jgolden17/
   icon: fab-github
