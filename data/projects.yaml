@@ -17,7 +17,7 @@
     - JavaScript
 - title: 'Personal Profile'
   packageName: '@jgolden17/personal-profile'
-  description: 'My personal profile written in Gatsby'
+  description: 'My personal website built with Gatsby and Bulma. Configured for automated CI/CD deployments to Linux servers hosted by May First Movement Technology.'
   url: 'https://gitlab.com/jgolden17/personal-profile'
   language: 'React'
   role: 'author'
