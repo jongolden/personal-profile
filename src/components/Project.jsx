@@ -18,7 +18,7 @@ const Project = ({
     <div>
       <span className="tag is-link mr-2">{role}</span>
       {stack.map((stack) => (
-        <span key={stack} className="tag is-info mr-2">{stack}</span>
+        <span key={stack} className="tag is-info mr-2 mb-1">{stack}</span>
       ))}
     </div>
   </a>
