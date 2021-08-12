@@ -1,3 +1,11 @@
+- title: 'Liquid Democracy'
+  subtitle: 'A liquid democracy voting app'
+  description: 'A voting application using the liquid democracy model. Designed with Domain Driven Design (DDD) and Event Storming. Implemented with CQS and event sourcing.'
+  url: 'https://gitlab.com/jgolden17/liquid-democracy-poll'
+  role: 'author'
+  stack:
+    - Typescript
+    - MongoDB
 - title: 'Wetherill Portfolio'
   subtitle: 'Artist porfolio for Bill Wetherill'
   description: 'Artist profile built with Gatsby, Bulma, and Contentful CMS'
@@ -33,11 +41,3 @@
   role: 'author'
   stack:
     - React
-- title: 'Strava Fetch'
-  packageName: 'strava-fetch'
-  description: 'Fetch procedures for consuming the Strava API.'
-  url: 'https://gitlab.com/jgolden17/strava-fetch'
-  language: 'JavaScript'
-  role: 'author'
-  stack:
-    - JavaScript
